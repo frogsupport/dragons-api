@@ -24,4 +24,4 @@ phases:
       
 artifacts:
   files:
-    - ./Dragons.Api/bin/Release/net6.0/**
+    - Dragons.Api/bin/Release/net6.0/**/*
