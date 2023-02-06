@@ -25,4 +25,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: ./Dragons.Api/bin/Release/net6.0/
+  base-directory: ./codebuild/output/src330061787/src/github.com/frogsupport/dragons-api-aws/Dragons.Api/bin/Debug/net6.0/linux-x64/
