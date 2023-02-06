@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BE27A46B-260C-45A5-9442-04C977F2DEE7}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		buildspec.yml = buildspec.yml
 		README.md = README.md
 	EndProjectSection
 EndProject

@@ -1,0 +1,27 @@
+# Based on https://github.com/PrakashTrove/AWS-CodeBuild-NetCore/blob/master/buildspec.yml
+
+version: 0.2
+    
+phases:   
+  install:
+    runtime-versions:
+      dotnet: latest
+      
+  pre_build:
+    commands:
+      - echo Restore started on `date`
+      - dotnet restore ./Dragons.Api/Dragons.Api.csproj
+      
+  build:
+    commands:
+      - echo Build started on `date`
+      - dotnet build ./Dragons.Api/Dragons.Api.csproj
+      
+  post_build:
+    commands:
+      - echo Publish started on `date`
+      - dotnet publish ./Dragons.Api/Dragons.Api.csproj -r linux-x64 --self-contained false
+      
+artifacts:
+  files:
+    - ./bin/Debug/*
