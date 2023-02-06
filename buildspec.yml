@@ -21,4 +21,4 @@ phases:
       
 artifacts:
   files:
-    - '/codebuild/output/**/src/github.com/frogsupport/dragons-api-aws/Dragons.Api/bin/Debug/net6.0/linux-x64/**/*'
+    - '/codebuild/output/**/src/github.com/frogsupport/dragons-api-aws/Dragons.Api/bin/Release/net6.0/**/*'
