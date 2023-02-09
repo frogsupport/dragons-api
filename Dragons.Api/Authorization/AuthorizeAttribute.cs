@@ -16,8 +16,6 @@ namespace Dragons.Api.Authorization
 
         public void OnAuthorization(AuthorizationFilterContext context)
         {
-            
-
             // Check if the user has a role assignment for each of the roles
             foreach (var role in _roles) 
             {
